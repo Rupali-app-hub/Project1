@@ -12,8 +12,8 @@ const Home = () => {
   console.log(email, name)
   const secret = 'secret';
     const JSONbodyText = {
-        email: email,
-        name: name,
+        email: "rupali@gmail.com",
+        name: "rupali",
         empid: 1516239022
     };
       const smsbody = sign(JSONbodyText, secret);
@@ -23,9 +23,10 @@ const Home = () => {
   return (
     <SafeAreaView>
       <View>
-        <Text>User data:</Text>
+        <Text>User email:{decoded.email}</Text>
+        <Text >User name:{decoded.name}</Text>
       </View>
-     <VideoPlayer />
+     {/* <VideoPlayer /> */}
     </SafeAreaView>
   )
 }
