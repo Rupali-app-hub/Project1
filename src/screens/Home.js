@@ -26,7 +26,7 @@ const Home = () => {
         <Text>User email:{decoded.email}</Text>
         <Text >User name:{decoded.name}</Text>
       </View>
-     {/* <VideoPlayer /> */}
+     <VideoPlayer />
     </SafeAreaView>
   )
 }
